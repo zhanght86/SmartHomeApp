@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="home_color_golden_1">#e0c791</color>
+    <color name="home_color_golden_2">#96855c</color>
+    <color name="home_color_golden_3">#847246</color>
+    <color name="home_scene_color">#111111</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_line">#474746</color>
+    <color name="news_title">#2b2b2b</color>
+    <color name="news_content">#998966</color>
+    <color name="color_light_line">#2a261e</color>
+    <color name="color_set_line">#727882</color>
+    <color name="color_elevator">#d0b471</color>
+</resources>

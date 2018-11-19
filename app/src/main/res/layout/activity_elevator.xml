@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gatz.smarthomeapp.activity.elevator.ElevatorActivity">
+
+    <RelativeLayout
+        android:id="@+id/elevator_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/voice_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/common_back_selector" />
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/common_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/elevator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="427dp"
+        android:layout_below="@+id/elevator_top_layout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dianti_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_elevator_floor_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="27"
+                android:textColor="@color/color_elevator"
+                android:textSize="220px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/elevator_one"
+                android:textColor="@color/home_color_golden_1"
+                android:textSize="32sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/dianti_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_elevator_floor_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="27"
+                android:textColor="@color/color_elevator"
+                android:textSize="220px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/elevator_two"
+                android:textColor="@color/home_color_golden_1"
+                android:textSize="32sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@+id/elevator_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/set_up_btn_n"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/elevator_one_up"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/lift_left_btn_selector"
+            android:src="@drawable/lift_left_src_selector" />
+
+        <ImageButton
+            android:id="@+id/elevator_one_down"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/lift_right_btn_selector"
+            android:src="@drawable/lift_right_src_selector" />
+    </LinearLayout>
+</RelativeLayout>

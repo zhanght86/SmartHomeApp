@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <RelativeLayout
+        android:layout_width="864dp"
+        android:layout_height="568dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/news_popup_bg">
+        <ImageView
+            android:id="@+id/iv_news_detail"
+            android:layout_width="480dp"
+            android:layout_height="317dp"
+            android:background="@drawable/news_readed"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/home_color_golden_1"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/iv_news_detail"
+            android:text="尊敬的业主，欢迎加入国安之家，您五月份的水电费账单已出，电费五月为370元，请您于6月10日之前尽快交到物业处，逾期将停电。为了保障您的生活质量，请您尽快缴费"
+            />
+        <Button
+            android:id="@+id/btn_news_close"
+            android:layout_width="312dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/news_finish"
+            android:textSize="26sp"
+            android:textColor="@color/home_color_golden_1"
+            android:background="@drawable/news_btn_close_selector"/>
+    </RelativeLayout>
+
+</RelativeLayout>

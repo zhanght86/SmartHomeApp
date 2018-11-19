@@ -1,0 +1,88 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    //兼容httpUtil
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.gatz.smarthomeapp"
+        multiDexEnabled true
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 6
+        versionName "1.0.5"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories{
+        flatDir{
+            dirs 'libs'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/Msc.jar')
+    compile(name: 'smart', ext: 'aar')
+    //    compile('com.citic.zktd.saber.server:saber-server-entity:2.0.0.RELEASE') {
+    //        exclude module: 'spring-boot-starter-data-jpa'
+    //        exclude module: 'calimero-core'
+    //    }
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.google.guava:guava:14.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'org.apache.httpcomponents:httpmime:4.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.hwangjr.rxbus:rxbus:1.0.3'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'org.quartz-scheduler:quartz:2.2.3'
+    compile 'io.netty:netty-all:4.0.36.Final'
+    compile 'org.codehaus.jackson:jackson-core-asl:1.9.5'
+    compile 'org.codehaus.jackson:jackson-mapper-asl:1.9.5'
+    compile 'commons-beanutils:commons-beanutils:1.8.3'
+    compile 'org.apache.commons:commons-lang3:3.1'
+    compile 'org.slf4j:slf4j-api:1.7.2'
+    compile 'com.google.guava:guava:14.0.1'
+    compile files('libs/saber-server-entity-2.0.0.RELEASE.jar')
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/news_main_layout"
+    tools:context="com.gatz.smarthomeapp.activity.news.view.NewsActivity">
+
+    <RelativeLayout
+        android:id="@+id/home_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp">
+
+        <RelativeLayout
+            android:id="@+id/news_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/common_back_selector"  />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/common_logo" />
+
+
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/gridview_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_title_layout"
+        android:columnWidth="285dp"
+        android:numColumns="3"
+        android:verticalSpacing="22.4dp"
+        android:horizontalSpacing="22.4dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:listSelector="@drawable/gridview_selector"></GridView>
+
+</RelativeLayout>

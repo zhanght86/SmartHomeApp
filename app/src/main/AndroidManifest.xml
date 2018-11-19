@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gatz.smarthomeapp">
+    <!-- Required -->
+    <permission
+        android:name="com.gatz.smartctrlphoneapp.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="com.gatz.smarthomeapp.service.provider.READ_ONLY" />
+    <uses-permission android:name="com.gatz.smarthomeapp.service.provider.WRITE_ONLY" />
+
+
+    <permission
+        android:name="com.gatz.smarthomeapp.service.provider.READ_ONLY"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.gatz.smarthomeapp.service.provider.WRITE_ONLY"
+        android:protectionLevel="normal" />
+
+    <application
+        android:name=".base.MyAppliCation"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.login.view.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="standard"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified">
+
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.MAIN" />
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.SmartHomeService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.gatz.smarthomeapp.service.aidl.UserManagerApi" />
+                <action android:name="com.gatz.smarthomeapp.service.aidl.DeviceCommandApi" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.VoiceService"
+            android:enabled="true" />
+
+        <provider
+            android:name=".provider.SmartProvider"
+            android:authorities="com.gatz.smarthomeapp.service.smartHomeservice.provider"
+            android:exported="true"
+            android:readPermission="com.gatz.smarthomeapp.service.provider.READ_ONLY"
+            android:writePermission="com.gatz.smarthomeapp.service.provider.WRITE_ONLY" />
+
+        <activity
+            android:name=".activity.home.HomeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name=".activity.setup.view.SetupActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name=".activity.voice.VoiceAssistantActivity"
+            android:label="@string/title_activity_news" />
+
+        <receiver android:name=".broadcast.UpdataReceiver">
+            <intent-filter>
+                <action android:name="UPDATA_ALARM_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.UpDataAppService" />
+
+        <activity
+            android:name=".activity.setup.view.NetworkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+        <activity
+            android:name=".activity.elevator.ElevatorActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" />
+
+    </application>
+
+
+</manifest>

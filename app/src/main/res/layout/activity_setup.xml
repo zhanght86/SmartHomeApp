@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepage_bg"
+    tools:context=".activity.setup.view.SetupActivity">
+
+    <RelativeLayout
+        android:id="@+id/setup_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="76dp">
+
+        <ImageView
+            android:id="@+id/setup_backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/common_back_selector"
+            android:onClick="setupOnClick" />
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/common_logo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/setup_top_layout"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:background="@drawable/set_up_bg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.3"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/setup_idea_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/hp_safe_btn_selector"
+                    android:onClick="setupOnClick">
+
+                    <ImageView
+                        android:id="@+id/setup_idea_iv"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/set_up_icon1_btn_n" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setup_idea_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/setup_text1"
+                        android:textColor="@color/home_color_golden_1"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setup_version_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/homepage_bg_environment">
+
+                    <ImageView
+                        android:id="@+id/setup_version_iv"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/set_up_icon2_btn_n" />
+
+                    <TextView
+                        android:id="@+id/setup_version_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setup_version_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/setup_text2"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1.3">
+
+                <RelativeLayout
+                    android:id="@+id/setup_intent_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/homepage_bg_environment">
+
+                    <ImageView
+                        android:id="@+id/setup_intent_iv"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/set_up_icon3_btn_n" />
+
+                    <TextView
+                        android:id="@+id/setup_intent_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setup_intent_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/setup_text3"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/setup_user_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/hp_home_ctrl_btn_selector"
+                    android:onClick="setupOnClick">
+
+                    <ImageView
+                        android:id="@+id/setup_user_iv"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/set_up_icon4_btn_n" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/setup_user_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/setup_text4"
+                        android:textColor="@color/home_color_golden_1"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/setup_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="14dp"
+            android:layout_weight="3.0"
+            android:background="@drawable/common_frame_bg"></FrameLayout>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/setup_close_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/linearlayout"
+        android:layout_alignTop="@+id/linearlayout"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/setup_btn_close_selector"
+        android:onClick="setupOnClick" />
+</RelativeLayout>

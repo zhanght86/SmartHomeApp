@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">SmartHomeApp</string>
+
+    <string name="crash_text">很抱歉,出现了一点儿小问题,我们会继续完善!</string>
+    <string name="phone_err0">请输入账号</string>
+    <string name="phone_err1">请输入正确的账号</string>
+    <string name="pwd_err0">请输入密码</string>
+    <string name="pwd_err1">密码不少于6位</string>
+    <string name="pwd_err2">密码长度不超过20位</string>
+    <string name="net_err">请检查网络连接</string>
+    <string name="login_failed">登录失败</string>
+    <string name="null_rooms">没有房间</string>
+    <string name="voice_tip01">语音转换失败</string>
+    <string name="login_dialog">登陆中...</string>
+
+    <string name="air_text1">空调控制</string>
+    <string name="air_text2">Air conditioning control</string>
+    <string name="home_text1">智能起居</string>
+    <string name="home_text2">Smart living</string>
+    <string name="safe_text1">门禁</string>
+    <string name="safe_text2">Access control</string>
+    <string name="environment_text1">室内环境</string>
+    <string name="environment_text2">Indoor environment</string>
+    <string name="setting_text1">系统设置</string>
+    <string name="setting_text2">System settings</string>
+    <string name="message_text1">消息通知</string>
+    <string name="message_text2">Message notification</string>
+    <string name="voice_text1">语音助手</string>
+    <string name="elevator_text1">电梯控制</string>
+    <string name="elevator_text2">Elevator control</string>
+    <string name="voice_text2">Voice assistant</string>
+    <string name="secure_text1">安防</string>
+    <string name="secure_text2">Security</string>
+    <string name="lift_text">电梯控制</string>
+    <string name="scene_text">场景选择</string>
+    <string name="scene_gohome">回家</string>
+    <string name="scene_leavehome">离家</string>
+    <string name="scene_sleep">就寝</string>
+    <string name="scene_film">影音</string>
+    <string name="scene_eat">就餐</string>
+    <string name="scene_greet">迎宾</string>
+    <string name="elevator_one">1号电梯</string>
+    <string name="elevator_two">2号电梯</string>
+
+    <string name="setup_text1">意见反馈</string>
+    <string name="setup_text2">版本号</string>
+    <string name="setup_text3">网络设置</string>
+    <string name="setup_text4">切换账号</string>
+    <string name="setup_text5">系统设置</string>
+    <string name="idear_text">欢迎提交建议和意见,我们的进步离不开您的反馈!</string>
+    <string name="setup_updata_text">升级</string>
+    <string name="setup_submit_text">提交</string>
+
+    <string name="setup_updata_text1">已经是最新版本了!</string>
+    <string name="setup_updata_text2">有新版本需要升级,请点击更新.\n版本号为:%s</string>
+    <string name="setup_updata_text3">获取版本信息失败！</string>
+    <string name="setup_updata_text4">升级失败!</string>
+
+    <string name="setup_erweima_text">扫描二维码立即下载国安智家APP!</string>
+    <string name="elevator_prompt_arrival">电梯已经到达</string>
+    <string name="title_activity_news"></string>
+    <string name="news_finish">关闭</string>
+    <string name="elevator_floor">当前层数</string>
+
+    <string name="guan">关</string>
+    <string name="all_close_text">全部关闭</string>
+    <string name="light_btn1_type">主灯</string>
+    <string name="light_btn2_type">灯带</string>
+    <string name="light_btn3_type">筒灯</string>
+
+    <string name="set_pwd_text">工程密码</string>
+    <string name="pwd">密码 : </string>
+    <string name="sure_text">确定</string>
+    <string name="cancel_text">取消</string>
+
+    <string name="pwd_sign_hint">请输入您的密码</string>
+    <string name="user_sign_hint">请输入您的账号</string>
+    <string name="user_sign_in">账号</string>
+    <string name="pwd_sign_in">密码</string>
+    <string name="sign_in">登录</string>
+
+
+    <string name="setup_network_dhcp">DHCP</string>
+    <string name="setup_network_ip">IP地址:</string>
+    <string name="setup_network_mask">子网掩码:</string>
+    <string name="setup_network_gateway">默认网关:</string>
+    <string name="setup_network_dns">DNS:</string>
+    <string name="setup_network">IP:</string>
+    <string name="setup_network_mac">MAC:</string>
+    <string name="setup_btn_ok">确定</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

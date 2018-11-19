@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/idear_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/idear_text"
+        android:textColor="@color/home_color_golden_1"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/submit_btn"
+        android:layout_below="@+id/idear_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            style="?android:attr/textViewStyle"
+            android:background="@null"
+            android:id="@+id/idear_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/home_color_golden_1"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_below="@+id/idear_edit"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="28dp"
+            android:background="@color/color_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submit_btn"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/setup_btn_selector"
+        android:text="@string/setup_submit_text"
+        android:textColor="@color/color_black"
+        android:textSize="15sp" />
+</RelativeLayout>

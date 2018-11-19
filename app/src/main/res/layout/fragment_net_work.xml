@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.gatz.smarthomeapp.activity.setup.fragment.NetWorkFragment">
+
+    <RelativeLayout
+        android:id="@+id/setup_layout_network"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="2.0dip"
+            android:text="@string/setup_network_dhcp"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <CheckBox
+            android:id="@+id/setup_network_dhcp"
+            android:layout_width="34.0dip"
+            android:layout_height="34.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="0.0dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="38.0dip"
+            android:text="@string/setup_network_ip"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/setup_network_ip"
+            android:layout_width="180.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="38.0dip"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="74.0dip"
+            android:text="@string/setup_network_mask"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/setup_network_mask"
+            android:layout_width="180.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="74.0dip"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="110.0dip"
+            android:text="@string/setup_network_gateway"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/setup_network_gateway"
+            android:layout_width="180.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="110.0dip"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="146.0dip"
+            android:text="@string/setup_network_dns"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <EditText
+            android:id="@+id/setup_network_dns"
+            android:layout_width="180.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="146.0dip"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="182.0dip"
+            android:text="@string/setup_network"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/setup_network_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="186.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginTop="210.0dip"
+            android:text="@string/setup_network_mac"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/setup_network_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="136.0dip"
+            android:layout_marginTop="214.0dip"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/setup_network_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        android:text="@string/setup_btn_ok"
+        android:textColor="@color/home_color_golden_1"
+        android:background="@drawable/news_btn_close_selector"
+        android:textSize="20.0sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

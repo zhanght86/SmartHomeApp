@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_marginBottom="30dp"
+        android:layout_above="@+id/upgrade_tv"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/set_up_upgrade_icon" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/upgrade_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upgrade_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/home_color_golden_1"
+        android:textSize="19sp" />
+
+    <Button
+        android:id="@+id/upgrade_btn"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/setup_btn_selector"
+        android:text="@string/setup_updata_text"
+        android:textColor="@drawable/setup_btn_text_color_selector"
+        android:textSize="15sp" />
+</RelativeLayout>

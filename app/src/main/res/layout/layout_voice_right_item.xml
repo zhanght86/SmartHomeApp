@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="100dp"
+    android:orientation="vertical">
+   <!-- <TextView
+        android:id="@+id/tv_voice_time"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:textSize="@dimen/textContent"
+        android:textColor="@color/white"
+        android:gravity="right" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="24dp">
+
+        <ImageView
+            android:id="@+id/iv_text_chat_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/default_avatar2"/>
+        <TextView
+            android:id="@+id/voice_textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_text_chat_user"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:lineSpacingExtra="2dp"
+            android:background="@drawable/balloon_r"
+            android:textColor="@color/color_black"
+            android:textSize="19sp"/>
+    </RelativeLayout>
+</LinearLayout>
